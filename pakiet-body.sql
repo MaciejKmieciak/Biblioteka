@@ -81,6 +81,8 @@ CREATE OR REPLACE PACKAGE BODY RENTAL AS
         ELSE
             TO_RETURN := PICKED_TITLE_ID;
         END IF;
+        
+        RETURN TO_RETURN;
     END;
     
     -- ==================================================================
